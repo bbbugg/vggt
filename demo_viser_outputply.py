@@ -110,7 +110,7 @@ def save_points_to_ply(
     os.makedirs(output_dir, exist_ok=True)
 
     # 构建完整输出路径
-    output_path = os.path.join(output_dir, "point_cloud.ply")
+    output_path = os.path.join(output_dir, "arm_point_cloud.ply")
 
     # 创建 Open3D 点云对象
     pcd = o3d.geometry.PointCloud()

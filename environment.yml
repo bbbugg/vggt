@@ -1,0 +1,18 @@
+name: vggt  # 你可以自定义环境名称
+channels:
+  - defaults
+  - conda-forge  # 建议添加 conda-forge 以获取更多包
+dependencies:
+  # 1. 在这里指定你的 Python 版本
+  - python=3.10
+
+  # 2. 添加其他你希望通过 Conda 安装的核心依赖（可选）
+  # 例如:
+  # - numpy
+  # - pytorch
+  # - torchvision
+
+  # 3. 告诉 Conda 使用 pip 安装 requirements.txt 中的包
+  - pip
+  - pip:
+    - -r requirements.txt
